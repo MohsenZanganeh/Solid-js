@@ -5,16 +5,27 @@ class Bird {
   fly(){
 
   }
+  walk(){
+
+  }
 }
 
-class Duck extends Bird{
+class Rooster extends Bird{
+  constructor(){
+    
+  }
   fly(){
 
+  }
+  walk(){
+    
   }
 }
 
 
 //*****************************--other example--*****************************
+
+
 class a {
   Message() {
     return "SUCCESS";

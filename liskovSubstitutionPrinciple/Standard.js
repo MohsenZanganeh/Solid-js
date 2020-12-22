@@ -7,6 +7,7 @@ class UnFlightFulBird extends Bird {
   constructor(name) {
     super(name);
   }
+  walk() {}
 }
 class FlightfulBird extends Bird {
   constructor(name) {
@@ -15,8 +16,6 @@ class FlightfulBird extends Bird {
   fly() {}
 }
 class Duck extends UnFlightFulBird {}
-
-
 
 //*****************************--other example--*****************************
 class Rectangle {

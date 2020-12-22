@@ -52,6 +52,7 @@ const circle_2 = new circle("circle_2", 66);
 
 const square_1 = new square("square_1", 50);
 const square_2 = new square("square_2", 20);
+
 const areaCalculator1 = new AreaCalculator([
     circle_1,
     circle_2,

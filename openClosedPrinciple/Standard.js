@@ -3,23 +3,51 @@ class Report {
   constructor (data){
       this.data = data
   }
-  export (){}
+
+  export (){
+    //Do Something With data for example
+    this.data ={...this.data , FontColor:'Black'};
+
+    return this.#reportOfData();
+  }
+
+  #reportOfData(){
+    //Do Something
+    return this.data;
+  }
 }
 
 class Pdf extends Report {
   constructor(){
     super();
+    this.PDF = 'pdf' //for example new from Pdf module
   }
+  Report(){
+    this.data = {name:'mohsen',phon:'09901759179',type:PDF}
+    //Do Something
+    return this.export()
+  }
+  
 }
 class Doc extends Report {
   constructor(){
     super();
+    this.DOC = 'Doc' //for example new from Doc module
   }    
+  Report(){
+    this.data = {name:'mohsen',phon:'09901759179',type:DOC}
+    return this.export()
+  }
 }
 class Xml extends Report {
   constructor(){
     super();
+    this.XML = 'pdf' //for example new from Xml module
   }    
+  Report(){
+    this.data = {name:'mohsen',phon:'09901759179',type:XML}
+    return this.export()
+  }
 }
 
 
@@ -44,7 +72,7 @@ class AreaCalculator {
 
     shapes.forEach((value) => {
       if (value instanceof circle) {
-          
+        
         const circleArea = {
           name: value.name,
           area: value.radius * 2 * 3.14,
@@ -53,11 +81,11 @@ class AreaCalculator {
       }
 
       if (value instanceof square) {
-        const circleArea = {
+        const squareArea = {
           name: value.name,
           area: (value.length * value.length) ,
         };
-        this.areas.push(circleArea);
+        this.areas.push(squareArea);
       }
       
 
