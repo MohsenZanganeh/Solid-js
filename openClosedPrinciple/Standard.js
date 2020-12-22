@@ -1,3 +1,31 @@
+
+class Report {
+  constructor (data){
+      this.data = data
+  }
+  export (){}
+}
+
+class Pdf extends Report {
+  constructor(){
+    super();
+  }
+}
+class Doc extends Report {
+  constructor(){
+    super();
+  }    
+}
+class Xml extends Report {
+  constructor(){
+    super();
+  }    
+}
+
+
+
+
+//*****************************--other example--*****************************
 class circle {
   constructor(name, radius) {
     this.radius = radius;

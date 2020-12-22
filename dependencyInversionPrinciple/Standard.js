@@ -14,7 +14,7 @@ class Sms {
 }
 class SendWelcomeMessage {
   constructor(mailer) {
-    this.mailer = mailer;
+    this.mailer =new mailer;
   }
   sendMessage(name) {
     const message = `welcome ${name}`;
@@ -23,10 +23,10 @@ class SendWelcomeMessage {
   }
 }
 
-const sendWelcomeMessage = new SendWelcomeMessage(new Mailer());
+const sendWelcomeMessage = new SendWelcomeMessage(Mailer);
 
 sendWelcomeMessage.sendMessage("Mohsen");
 
-const sendWelcomeMessage2 = new SendWelcomeMessage(new Sms());
+const sendWelcomeMessage2 = new SendWelcomeMessage(Sms);
 
 sendWelcomeMessage2.sendMessage("Ali");

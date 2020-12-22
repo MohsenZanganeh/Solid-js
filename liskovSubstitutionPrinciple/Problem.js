@@ -1,3 +1,20 @@
+class Bird {
+  constructor(name){
+      this.name = name
+  }
+  fly(){
+
+  }
+}
+
+class Duck extends Bird{
+  fly(){
+
+  }
+}
+
+
+//*****************************--other example--*****************************
 class a {
   Message() {
     return "SUCCESS";

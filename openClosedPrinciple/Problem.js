@@ -1,3 +1,26 @@
+class Report {
+  constructor (type, data){
+      this.type = type;
+      this.data = data
+  }
+  export (){
+      if (this.type == 'pdf') {
+          //Do Something
+      }
+      else if (this.type == 'doc'){
+          //Do Something
+      }
+      else if (this.type == 'xml'){
+          //Do Something
+      }
+  }
+}
+
+
+
+
+
+//*****************************--other example--*****************************
 class circle {
   constructor(name, radius) {
     this.radius = radius;
@@ -42,3 +65,4 @@ const areaCalculator1 = new AreaCalculator([
 
 console.table(areaCalculator1.areas);
 // console.table(areaCalculator2.areas);
+
