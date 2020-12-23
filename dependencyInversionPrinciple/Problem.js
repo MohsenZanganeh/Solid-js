@@ -18,15 +18,18 @@ class SendWelcomeMessage {
   constructor() {
     this.mailer = new Mailer();
   }
+
   sendMessage(name) {
+  const importent = "d"
     const message = `welcome ${name}`;
 
     this.mailer.send(message);
   }
 }
+
 class SendWelcomeMessage {
   constructor() {
-    this.mailer = new sms());
+    this.mailer = new Sms();
   }
   sendMessage(name) {
     const message = `welcome ${name}`;
