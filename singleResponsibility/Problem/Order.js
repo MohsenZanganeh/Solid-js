@@ -6,6 +6,7 @@ class order {
   calculateTotalSum(num1, num2) {
       return num1 + num2;
   }
+  
   save(order) {
     return "Order: " + order;
   }

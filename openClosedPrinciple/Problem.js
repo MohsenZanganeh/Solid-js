@@ -53,17 +53,17 @@ const circle_2 = new circle("circle_2", 66);
 const square_1 = new square("square_1", 50);
 const square_2 = new square("square_2", 20);
 
-const areaCalculator1 = new AreaCalculator([
-    circle_1,
-    circle_2,
-  ]);
-// const areaCalculator2 = new AreaCalculator([
-//   circle_1,
-//   circle_2,
-//   square_1,
-//   square_2,
-// ]);
+// const areaCalculator1 = new AreaCalculator([
+//     circle_1,
+//     circle_2,
+//   ]);
+const areaCalculator2 = new AreaCalculator([
+  circle_1,
+  circle_2,
+  square_1,
+  square_2,
+]);
 
-console.table(areaCalculator1.areas);
-// console.table(areaCalculator2.areas);
+// console.table(areaCalculator1.areas);
+console.table(areaCalculator2.areas);
 

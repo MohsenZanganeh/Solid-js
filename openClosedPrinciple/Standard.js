@@ -8,13 +8,13 @@ class Report {
     //Do Something With data for example
     this.data ={...this.data , FontColor:'Black'};
 
-    return this.#reportOfData();
+    // return this.#reportOfData();
   }
 
-  #reportOfData(){
-    //Do Something
-    return this.data;
-  }
+  // #reportOfData(){
+  //   //Do Something
+  //   return this.data;
+  // }
 }
 
 class Pdf extends Report {

@@ -15,7 +15,7 @@ class FlightfulBird extends Bird {
   }
   fly() {}
 }
-class Duck extends UnFlightFulBird {}
+class Rooster extends UnFlightFulBird {}
 
 //*****************************--other example--*****************************
 class Rectangle {
